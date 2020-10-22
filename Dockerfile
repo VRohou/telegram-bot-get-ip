@@ -1,7 +1,7 @@
 FROM python:3.7-slim
 
 RUN apt-get update \
-&& apt-get install gcc -y \
+&& apt-get install gcc libffi-dev libssl-dev -y \
 && apt-get clean
 
 RUN mkdir /app
